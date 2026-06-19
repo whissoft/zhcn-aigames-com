@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>爱游戏体育 · 站点介绍</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f9f9f6;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      color: #1e2b3c;
+      line-height: 1.65;
+      padding: 3rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .page {
+      max-width: 760px;
+      width: 100%;
+    }
+
+    /* 标题层级 */
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 550;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.2rem;
+      color: #0a1a2b;
+    }
+
+    .subhead {
+      font-size: 1rem;
+      color: #5f6b7a;
+      margin-bottom: 2.5rem;
+      border-bottom: 1px solid #dde3ea;
+      padding-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 500;
+      margin-top: 2.8rem;
+      margin-bottom: 0.8rem;
+      color: #102433;
+      border-left: 3px solid #b7c9db;
+      padding-left: 0.75rem;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-top: 1.8rem;
+      margin-bottom: 0.4rem;
+      color: #1f374c;
+    }
+
+    p {
+      margin-bottom: 1.1rem;
+      font-size: 1rem;
+      color: #2a384a;
+    }
+
+    /* 卡片——极简留白 */
+    .card-simple {
+      background: #ffffff;
+      border: 1px solid #e6ecf2;
+      border-radius: 12px;
+      padding: 1.8rem 2rem;
+      margin: 2rem 0;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+    }
+
+    .card-simple p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* 特点列表：无图标，仅文字 */
+    .feature-list {
+      list-style: none;
+      margin: 0.5rem 0 1.2rem;
+    }
+
+    .feature-list li {
+      padding: 0.5rem 0;
+      border-bottom: 1px dashed #e2e9f0;
+      display: flex;
+      align-items: baseline;
+    }
+
+    .feature-list li:last-child {
+      border-bottom: none;
+    }
+
+    .feature-list li::before {
+      content: "·";
+      color: #4b7b9e;
+      font-weight: 700;
+      font-size: 1.4rem;
+      margin-right: 0.6rem;
+      line-height: 1;
+    }
+
+    /* 使用场景——简洁块 */
+    .scenario-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem 1.2rem;
+      margin: 1rem 0 1.5rem;
+    }
+
+    .scenario-item {
+      background: #f0f4f9;
+      padding: 0.4rem 1rem;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      color: #1f374c;
+      border: 1px solid transparent;
+    }
+
+    /* 提示区块 */
+    .note {
+      background: #edf2f7;
+      border-radius: 10px;
+      padding: 1.2rem 1.5rem;
+      margin: 1.8rem 0;
+      font-size: 0.95rem;
+      border-left: 3px solid #8ba7c2;
+    }
+
+    .note strong {
+      color: #1e3d5b;
+    }
+
+    /* FAQ 摘要风格 */
+    .faq-mini {
+      margin: 1.8rem 0;
+    }
+
+    .faq-mini details {
+      margin-bottom: 0.6rem;
+      border-bottom: 1px solid #e3eaf0;
+      padding-bottom: 0.4rem;
+    }
+
+    .faq-mini summary {
+      cursor: pointer;
+      font-weight: 500;
+      color: #1f374c;
+      padding: 0.4rem 0;
+      font-size: 0.98rem;
+    }
+
+    .faq-mini details[open] summary {
+      color: #0a1a2b;
+    }
+
+    .faq-mini details p {
+      margin: 0.4rem 0 0.8rem 0.8rem;
+      font-size: 0.93rem;
+      color: #3a4b5e;
+    }
+
+    /* 链接样式 —— 自然嵌入 */
+    a {
+      color: #1d5e8f;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s;
+    }
+
+    a:hover {
+      border-bottom-color: #1d5e8f;
+    }
+
+    .footer-note {
+      margin-top: 3.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #dce4ec;
+      font-size: 0.9rem;
+      color: #556a7d;
+      text-align: left;
+    }
+
+    /* 响应式 */
+    @media (max-width: 520px) {
+      body {
+        padding: 2rem 1rem;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+      .card-simple {
+        padding: 1.2rem 1rem;
+      }
+      .feature-list li {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <h1>爱游戏体育 · 介绍与说明</h1>
+    <div class="subhead">关于站点定位、内容方向与使用提示</div>
+
+    <p>
+      在体育资讯与数字内容交汇的领域，<a href="https://zhcn-aigames.com">爱游戏体育</a> 作为一个信息聚合型站点，主要面向对竞技体育、运动数据以及相关衍生内容感兴趣的用户。它并不以单一赛事或平台自居，而是尝试提供一种结构化的浏览体验，帮助访问者更快定位到所关注的体育主题。
+    </p>
+
+    <p>
+      站点的内容组织以实用性为出发点：赛事回顾、项目科普、趋势观察等模块都采用了简洁的条目式陈列。不同于强运营的门户，这里更倾向于做“信息的整理者”——将分散的体育话题按逻辑聚合，减少重复检索的时间成本。
+    </p>
+
+    <!-- 亮点卡片 (产品说明式) -->
+    <div class="card-simple">
+      <h3 style="margin-top:0; border-left: none; padding-left:0;">站点亮点</h3>
+      <ul class="feature-list">
+        <li><strong>分类清晰</strong> – 按运动项目、赛事类型、分析维度分别归档，降低浏览负担。</li>
+        <li><strong>内容克制</strong> – 不堆砌推送，每类主题下保持适度条目，便于集中阅读。</li>
+        <li><strong>持续补充</strong> – 内容库基于公开体育信息整理，并随着赛季与话题自然更新。</li>
+        <li><strong>低干扰阅读</strong> – 页面采用极简布局，无弹窗、无浮层广告，将注意力留给内容本身。</li>
+      </ul>
+    </div>
+
+    <h2>适合哪些使用场景</h2>
+    <p>
+      无论你是想快速回顾某联赛的近期动态，还是希望横向比较不同运动的基本规则，<a href="https://zhcn-aigames.com">爱游戏体育</a> 的内容结构都能提供一定参考。以下是一些常见的使用场景：
+    </p>
+    <div class="scenario-grid">
+      <span class="scenario-item">⚽ 足球赛事索引</span>
+      <span class="scenario-item">🏀 篮球数据概览</span>
+      <span class="scenario-item">🎾 网球赛事科普</span>
+      <span class="scenario-item">🏐 团队运动比较</span>
+      <span class="scenario-item">📊 运动趋势笔记</span>
+      <span class="scenario-item">📖 项目规则查阅</span>
+    </div>
+
+    <h2>内容原则与可信说明</h2>
+    <p>
+      本站内容主要来源于公开体育数据库、赛事官方统计以及经过交叉验证的体育媒体。每一篇摘要或条目均标注了数据参考范围，不制造未经核实的独家消息。体育赛事本身具有时效性，因此我们建议用户结合官方渠道或实时比分平台同步使用。
+    </p>
+    <p>
+      在引用数据时，站点力求保持中立表述——不夸大某一方的竞技表现，也不对未发生的赛果进行预测与暗示。这种克制是为了让浏览者能够基于事实信息自行判断，而非被诱导点击或情绪化内容左右。
+    </p>
+
+    <!-- 使用建议 (自然提示) -->
+    <div class="note">
+      <strong>💡 使用建议</strong><br>
+      如果你正在寻找某个特定联赛或运动项目的结构化摘要，可以直接从站内分类标签开始浏览。对于深度战术分析或实时比分，建议同时参考专业数据站点进行补充。<a href="https://zhcn-aigames.com">爱游戏体育</a> 更适合作为信息检索的起点而非终点。
+    </div>
+
+    <h2>关于访问与兼容性</h2>
+    <p>
+      站点面向主流桌面与移动浏览器进行适配，无需安装额外插件即可正常阅读。所有页面均采用静态内容输出，加载速度较快。如果你在访问过程中遇到显示异常，可尝试刷新或更新浏览器版本。
+    </p>
+    <p>
+      由于体育资讯具有动态属性，部分条目会随赛季推进而调整或归档。站内没有设置强制推送或自动跳转，浏览路径完全由用户自主控制。
+    </p>
+
+    <!-- FAQ 摘要 (克制、知识向) -->
+    <h2>常见疑问摘要</h2>
+    <div class="faq-mini">
+      <details>
+        <summary>内容更新频率是怎样的？</summary>
+        <p>站点没有固定的更新周期，通常跟随主流体育赛事节奏进行补充。重大赛事期间条目增加较为密集，非赛季时段以资料整理为主。</p>
+      </details>
+      <details>
+        <summary>是否需要注册或登录？</summary>
+        <p>目前所有内容均为公开可读，无需注册或登录。站点不收集个人浏览数据，也不设用户系统。</p>
+      </details>
+      <details>
+        <summary>可以转载站内内容吗？</summary>
+        <p>引用少量内容并注明来源即可。若大量转载或商业使用，建议先通过页面底部信息联系确认。</p>
+      </details>
+    </div>
+
+    <div class="footer-note">
+      <p>爱游戏体育 · 以信息整理为初衷，提供体育领域的结构化浏览体验。如需了解具体内容，可直接进入 <a href="https://zhcn-aigames.com">爱游戏体育</a> 浏览分类索引。</p>
+    </div>
+  </div>
+</body>
+</html>
